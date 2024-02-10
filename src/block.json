@@ -1,0 +1,20 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "seriously/seriously",
+	"version": "0.1.0",
+	"title": "Seriously",
+	"category": "widgets",
+	"icon": "shield",
+	"description": "Seriously",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "seriously",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./build/style-index.css",
+	"render": "file:./render.php",
+	"viewScript": "file:./view.js"
+}

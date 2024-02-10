@@ -1,0 +1,11 @@
+.fuckin-form {
+	background-color: #21759b;
+	color: #fff;
+	padding: 2px;
+	outline: "red" dotted 2px;
+	outline-offset: 3px;
+
+	.fuckin-input::placeholder {
+		font-weight: bold;
+	}
+}
