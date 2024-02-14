@@ -20,3 +20,5 @@ function seriously_seriously_block_init() {
 	register_block_type( __DIR__ . '/build' );
 }
 add_action( 'init', 'seriously_seriously_block_init' );
+
+// include_once( plugin_dir_path( __FILE__ ) . '/src/fetch.php' );

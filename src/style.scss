@@ -4,8 +4,24 @@
 	padding: 2px;
 	outline: "red" dotted 2px;
 	outline-offset: 3px;
+	position: relative;
+	justify-content: center;
+	display: flex;
+	padding: 2rem 3rem;
+	border-radius: .25rem;
+	margin: 1.5rem;
 
 	.fuckin-input::placeholder {
 		font-weight: bold;
 	}
+}
+
+.fuckin-form::after {
+	content: "";
+	position: absolute;
+	background-color: red;
+	inset: -6px -12px 7px 13px;
+	z-index: -1;
+	border-radius: inherit;
+	filter: blur(3px);
 }

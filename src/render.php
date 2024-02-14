@@ -1,4 +1,13 @@
 <?php
+/*
+Plugin Name: Seriously
+*/
+include 'fetch.php';
+
+echo "<script type='text/javascript'>console.log(".wp_json_encode($items).")</script>";
+
+setcookie("items", wp_json_encode($items));
+
 // enqueue your JavaScript file
 function enqueue_view_script() {
     // Register the script first
@@ -13,7 +22,7 @@ function enqueue_styles() {
     // Register the stylesheet first
     wp_register_style( 'my-plugin-styles', plugins_url( '/style-view.css', __FILE__ ) );
     
-    // Enqueue the stylesheet
+    // Enqueue thes stylesheet
     wp_enqueue_style( 'my-plugin-styles' );
 }
 
